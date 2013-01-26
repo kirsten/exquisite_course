@@ -35,11 +35,17 @@
  }
 
  .three-column {
-   margin: 12px;
+   margin: 2px;
    width: 300px;
    height: 330px;
    float: left;
    position: relative;
+   padding: 8px;
+   border: 1px solid #eee;
+ }
+ 
+ .three-column:hover {
+   box-shadow: 3px 3px 5px #999;
  }
 
  .three-column img {

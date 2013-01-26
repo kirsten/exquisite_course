@@ -8,7 +8,7 @@
 
 starch = Group.create(name: "starches")
 vegetable = Group.create(name: "vegetables")
-topping = Group.create(name: "toppings")
+flare = Group.create(name: "toppings")
 
 sweet_potato = Food.create(name: "sweet potato", photo: "sweet-potato.jpg")
 quinoa = Food.create(name: "quinoa", photo: "quinoa.jpg")
@@ -24,4 +24,4 @@ goat_cheese = Food.create(name: "goat cheese", photo: "goat-cheese.jpg")
 
 starch.foods = [sweet_potato, quinoa, orecchiette]
 vegetable.foods = [red_onion, kale, rapini]
-topping.foods = [pine_nuts, grapefruit, goat_cheese]
+flare.foods = [pine_nuts, grapefruit, goat_cheese]
