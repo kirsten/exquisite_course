@@ -12,6 +12,11 @@
  *= require_tree .
  */
  
+/*@font-face {
+  font-family: 'Commercial Script';
+  src: url(<%= asset_path('commersial_script.ttf') %>) format('truetype');
+  font-weight: normal;
+} */
  @import url(http://fonts.googleapis.com/css?family=Lilita+One);
  @import url(http://fonts.googleapis.com/css?family=Tangerine:700);
  @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
@@ -30,17 +35,17 @@
  }
 
  #container {
-   width: 1000px;
-   margin: 40px auto 0;
+   width: 1008px;
+   margin: 110px auto 0;
  }
 
  .three-column {
    margin: 2px;
    width: 300px;
-   height: 330px;
+   height: 300px;
    float: left;
    position: relative;
-   padding: 8px;
+   padding: 15px;
    border: 1px solid #eee;
  }
  
@@ -50,7 +55,7 @@
 
  .three-column img {
    width: 300px;
-   height: 330px;
+   height: 300px;
  }
 
  .overlay {
@@ -73,7 +78,7 @@
  }
 
  #vegetables .overlay {
-   font-family: 'Tangerine', cursive;
+   font-family: 'Commercial Script', cursive;
    font-weight: bold;
    font-size: 54px;
  }
