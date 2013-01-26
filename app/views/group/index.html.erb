@@ -1,0 +1,21 @@
+<% @groups.each do |group| %>
+  <div id="<%= group.name %>" class="three-column">
+    <%= image_tag(group.foods.first.photo) %>
+    <span class="overlay">
+      <%= group.foods.first.name %>
+    </span>
+  </div>
+<% end %>
+
+<!-- <div id="starch" class="three-column">
+  <img src="images/sweet-potato.jpg">
+  <span class="overlay">Sweet potato</span>
+</div>
+<div id="vegetable" class="three-column">
+  <img src="images/red-onion.jpg">
+  <span class="overlay">Red onion</span>
+</div>
+<div id="topping" class="three-column">
+  <img src="images/pine-nuts.jpg">
+  <span class="overlay">Pine nuts</span>
+</div>         -->

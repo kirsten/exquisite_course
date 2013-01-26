@@ -1,4 +1,8 @@
 ExquisiteCourse::Application.routes.draw do
+  
+  match '/' => 'group#index'
+  
+  resources :groups
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
