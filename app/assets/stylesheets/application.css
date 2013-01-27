@@ -47,11 +47,6 @@
    margin: 110px auto 0;
  }
  
- #meal {
-   width: 1308px;
-   margin: 0;
- }
- 
  nav {
    margin: 20px 2px;
  }
@@ -62,6 +57,14 @@
    font-weight: bolder;
    letter-spacing: 2px;
    text-transform: uppercase;
+   display: block;
+   float: left;
+   margin: 15px;
+   padding: 2px;
+ }
+ 
+ nav a:hover {
+   border-bottom: 1px dotted black;
  }
 
  .three-column {
@@ -88,11 +91,11 @@
    top: 135px;
    display: block;
    text-align: center;
-   width: 400px;
-   height: 133px;
+   width: 320px;
+   padding: 40px;
+   height: 53px;
    background: rgba(255, 255, 255, .9);
    font-size: 36px;
-   line-height: 100px;
  }
 
  #starches .overlay {
