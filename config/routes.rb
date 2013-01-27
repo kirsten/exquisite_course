@@ -1,6 +1,6 @@
 ExquisiteCourse::Application.routes.draw do
   
-  match '/' => 'home#show'
+  match '/' => 'home#show', as: 'home'
   
   resources :combinations
   resources :groups
