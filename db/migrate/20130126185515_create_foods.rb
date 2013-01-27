@@ -4,6 +4,7 @@ class CreateFoods < ActiveRecord::Migration
       t.string :name
       t.string :photo
       t.integer :group_id
+      t.integer :combination_id
 
       t.timestamps
     end
