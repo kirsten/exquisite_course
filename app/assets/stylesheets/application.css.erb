@@ -12,14 +12,19 @@
  *= require_tree .
  */
  
-/*@font-face {
+@font-face {
   font-family: 'Commercial Script';
-  src: url(<%= asset_path('commersial_script.ttf') %>) format('truetype');
-  font-weight: normal;
-} */
- @import url(http://fonts.googleapis.com/css?family=Lilita+One);
+  src: url("<%= asset_path 'commercial_script.ttf' %>");
+}
+
+@font-face {
+  font-family: 'Archive';
+  src: url("<%= asset_path 'Archive.otf' %> ");
+}
+
+/* @import url(http://fonts.googleapis.com/css?family=Lilita+One);
  @import url(http://fonts.googleapis.com/css?family=Tangerine:700);
- @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+ @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);*/
 
  .clearfix:after{
    clear: both;
@@ -99,16 +104,17 @@
  }
 
  #starches .overlay {
-   font-family: 'Lilita One', cursive;
-   letter-spacing: 1px;
-   font-weight: bolder;
+   font-family: 'Archive';
+   font-size: 60px;
+   line-height: 70px;
    text-transform: uppercase;
  }
 
  #vegetables .overlay {
-   font-family: 'Tangerine', 'Commercial Script', cursive;
+   font-family: 'Commercial Script';
    font-weight: bold;
-   font-size: 54px;
+   font-size: 60px;
+   line-height: 70px;
  }
 
  #flair .overlay {
