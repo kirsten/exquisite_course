@@ -22,9 +22,10 @@
   src: url("<%= asset_path 'Archive.otf' %> ");
 }
 
-/* @import url(http://fonts.googleapis.com/css?family=Lilita+One);
- @import url(http://fonts.googleapis.com/css?family=Tangerine:700);
- @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);*/
+@font-face {
+  font-family: 'Deming';
+  src: url("<%= asset_path 'Deming_EP.ttf' %> ");
+}
 
  .clearfix:after{
    clear: both;
@@ -105,7 +106,7 @@
 
  #starches .overlay {
    font-family: 'Archive';
-   font-size: 60px;
+   font-size: 48px;
    line-height: 70px;
    text-transform: uppercase;
  }
@@ -115,10 +116,12 @@
    font-weight: bold;
    font-size: 60px;
    line-height: 70px;
+   text-transform: capitalize;
  }
 
  #flair .overlay {
-   font-family: 'Stint Ultra Expanded', "Times New Roman", serif;
-   font-weight: bold;
+   font-family: 'Deming';
+   font-size: 40px;
+   line-height: 70px;
    text-transform: uppercase;
  }
