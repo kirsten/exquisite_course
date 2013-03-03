@@ -1,3 +1,7 @@
+<nav class="clearfix">
+  <%= link_to 'Home', home_path %>
+</nav>
+
 <div id="starches" class="three-column">
   <%= image_tag(@starch.photo) %>
   <span class="overlay">
@@ -21,7 +25,8 @@
 
 <div class="clear"></div>
 
-<nav>
-  <%= link_to 'New meal', new_combination_path %>
-  <%= link_to 'Home', home_path %>
-</nav>
+<div id="spin-again">
+  <a href="/combinations/new">
+    <i class="icon-random icon-4x"></i>
+  </a>
+</div>
