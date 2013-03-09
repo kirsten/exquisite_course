@@ -1,0 +1,29 @@
+%nav.clearfix
+  = link_to 'Home', home_path
+
+.three-column
+  = image_tag(@starch.photo)
+  .overlay
+    .name
+      #starch
+        = @starch.name
+
+.three-column
+  = image_tag(@veggie.photo)
+  .overlay
+    .name
+      #vegetable
+        = @veggie.name
+
+.three-column
+  = image_tag(@flair.photo)
+  .overlay
+    .name
+      #flair
+        = @flair.name
+
+.clear
+
+.controls
+  %a#spin-again{:href => "/combinations/new"}
+    %i.icon-random.icon-4x
