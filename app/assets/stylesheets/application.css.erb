@@ -46,7 +46,7 @@
    color: black;
    font-family: Helvetica, Arial, sans-serif;
    font-size: 18px;
-   line-height: 24px;
+   line-height: 1;
    background: url('vintage_speckles.png') repeat;
  }
 
@@ -139,32 +139,45 @@
    position: absolute;
    top: 135px;
    display: block;
-   text-align: center;
-   width: 320px;
-   padding: 40px;
-   height: 53px;
+   width: 360px;
+   padding: 20px;
+   height: 100px;
    background: rgba(255, 255, 255, .9);
-   font-size: 36px;
  }
 
- #starches .overlay {
+ .name {
+   position: relative;
+   width: 360px;
+   height: 100px;
+ }
+
+#starch,
+#vegetable,
+#flair {
+   text-align: center;
+   display: block;
+}
+
+#starch {
    font-family: 'Archive';
    font-size: 48px;
-   line-height: 70px;
+   line-height: 1;
    text-transform: uppercase;
  }
 
- #vegetables .overlay {
+#vegetable {
    font-family: 'Commercial Script';
    font-weight: bold;
    font-size: 60px;
-   line-height: 70px;
+   line-height: 1;
    text-transform: capitalize;
  }
 
- #flair .overlay {
+#flair {
    font-family: 'Deming';
    font-size: 40px;
-   line-height: 70px;
+   line-height: 1;
    text-transform: uppercase;
+   margin-top: 10px;
  }
+
