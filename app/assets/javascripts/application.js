@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require 'bigtext.js'
 //= require fonts
+//= require ingredients
