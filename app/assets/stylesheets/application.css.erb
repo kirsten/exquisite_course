@@ -28,14 +28,19 @@
   src: url("<%= asset_path 'Deming_EP.ttf' %> ");
 }
 
- .clearfix:after{
-   clear: both;
-   content: ".";
-   display: block;
-   height: 0;
-   visibility: hidden;
-   font-size: 0;
- }
+* {
+   margin: 0;
+   list-style-type: none;
+}
+
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
  
  .clear {
    clear: both;
@@ -51,28 +56,65 @@
 
  #container {
    width: 1308px;
-   margin: 30px auto 0;
+   margin: 0 auto;
+ }
+
+#ec-home {
+  margin-top: 133px;
+}
+ 
+header {
+   width: 400px;
+   margin: 0 2px 60px 2px;
+   padding: 5px 15px 10px;
+   background: white;
  }
  
- nav {
-   margin: 20px 2px;
- }
- 
- nav a {
-   color: black;
-   text-decoration: none;
-   font-weight: bolder;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   display: block;
-   float: left;
-   margin: 15px;
-   padding: 2px;
- }
- 
- nav a:hover {
-   border-bottom: 1px dotted black;
- }
+header h1 {
+  width: 200px;
+  float: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  display: block;
+  line-height: .7;
+}
+
+header a,
+header a:hover,
+header a:visited,
+header a:active {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.archive {
+  font-family: 'Archive';
+  font-size: 16px;
+}
+
+.commercial {
+  font-family: 'Commercial Script';
+  font-size: 32px;
+}
+
+.deming {
+  font-family: 'Deming';
+  font-size: 24px;
+}
+
+nav {
+  float: right;
+  position: relative;
+  top: 42px;
+}
+
+nav li {
+  float: left;
+  margin: 2px 4px;
+}
 
  .controls {
    width: 100%;
