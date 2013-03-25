@@ -1,24 +1,26 @@
-#ec-home
-  .three-column
-    = image_tag('squash.jpg')
-    .overlay
-      .name
-        #starch The
+.row
+  .one-third.column.home
+    .ingredient
+      = image_tag('squash.jpg')
+      .overlay
+        .name
+          #starch The
 
-  .three-column
-    = image_tag('radish.jpg')
-    .overlay
-      .name
-        #vegetable Exquisite
+  .one-third.column.home
+    .ingredient
+      = image_tag('radish.jpg')
+      .overlay
+        .name
+          #vegetable Exquisite
 
-  .three-column
-    = image_tag('pear.jpg')
-    .overlay
-      .name
-        #flair Course
+  .one-third.column.home
+    .ingredient
+      = image_tag('pear.jpg')
+      .overlay
+        .name
+          #flair Course
 
-  .clear
-
+.row
   .controls
     %span#tagline Inspiration for your next meal.
     %a#go{:href => "/combinations/new"}Go
