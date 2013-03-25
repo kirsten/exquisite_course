@@ -1,37 +1,39 @@
-%header.clearfix
-  %h1
-    %a{:href => home_path}
-      %span.archive The 
-      %span.commercial Exquisite 
-      %span.deming Course
-  %nav
-    %ul.archive.clearfix
-      %li= link_to 'Join', '#'
-      %li= link_to 'Login', '#'
-      %li= link_to 'About', '#'
+.sixteen.columns
+  %header.clearfix
+    %h1
+      %a{:href => home_path}
+        %span.archive The 
+        %span.commercial Exquisite 
+        %span.deming Course
+    %nav
+      %ul.archive.clearfix
+        %li= link_to 'Join', '#'
+        %li= link_to 'Login', '#'
+        %li= link_to 'About', '#'
 
-.three-column
-  = image_tag(@starch.photo)
-  .overlay
-    .name
-      #starch
-        = @starch.name
+.one-third.column
+  .ingredient
+    = image_tag(@starch.photo)
+    .overlay
+      .name
+        #starch
+          = @starch.name
 
-.three-column
-  = image_tag(@veggie.photo)
-  .overlay
-    .name
-      #vegetable
-        = @veggie.name
+.one-third.column
+  .ingredient
+    = image_tag(@veggie.photo)
+    .overlay
+      .name
+        #vegetable
+          = @veggie.name
 
-.three-column
-  = image_tag(@flair.photo)
-  .overlay
-    .name
-      #flair
-        = @flair.name
-
-.clear
+.one-third.column
+  .ingredient
+    = image_tag(@flair.photo)
+    .overlay
+      .name
+        #flair
+          = @flair.name
 
 .controls
   %a#spin-again{:href => "/combinations/new"}
