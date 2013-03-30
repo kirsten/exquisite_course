@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
-  def show
+  layout 'homepage'
+
+  def index
   end
 end
