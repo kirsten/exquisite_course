@@ -5,7 +5,7 @@ function ingredientHandlers() {
 }
 
 function pinIngredient() {
-  if ($(this).parent().parent().attr("id") != "ec-home") {
+  if ($(this).parent().parent().hasClass("home") == false) {
     $(this).parent().toggleClass('pinned');
   }
 }
