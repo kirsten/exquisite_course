@@ -18,19 +18,6 @@
   list-style-type: none;
 }
 
-.clearfix:after{
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  font-size: 0;
-}
- 
- .clear {
-  clear: both;
- }
-
  body {
   background: url('vintage_speckles.png') white repeat;
   color: black;
@@ -40,19 +27,19 @@
  }
  
 header {
-/*  width: 400px;*/
-  margin: 0 2px 60px 2px;
-  padding: 5px 15px 10px;
+  margin-bottom: 60px;
   background: white;
+  border: 1px solid #eee;
 }
  
     header h1 {
-      margin-top: 0;
-      width: 200px;
-      float: left;
+      margin-left: 10px;
       color: black;
+      width: 200px;
+      height: 80px;
+      float: left;
       text-decoration: none;
-      font-weight: bolder;
+      font-weight: bold;
       display: block;
       line-height: .7;
     }
@@ -67,6 +54,20 @@ header {
       width: 100%;
     }
 
+nav {
+  float: right;
+  height: 80px;
+}
+
+nav ul {
+  padding: 55px 10px 0 0;
+}
+
+nav li {
+  float: left;
+  margin: 2px 6px;
+}
+
 .archive {
   font-family: 'Archive';
   font-size: 16px;
@@ -80,17 +81,6 @@ header {
 .deming {
   font-family: 'Deming';
   font-size: 24px;
-}
-
-nav {
-  float: right;
-  position: relative;
-  top: 42px;
-}
-
-nav li {
-  float: left;
-  margin: 2px 4px;
 }
 
 .controls {
@@ -215,5 +205,3 @@ nav li {
   -webkit-box-shadow: inset 0 0 12px #666;
   box-shadow:         inset 0 0 12px #666;
 }
-
-
