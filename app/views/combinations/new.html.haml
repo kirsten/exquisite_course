@@ -1,40 +1,43 @@
-.sixteen.columns
-  %header.clearfix
-    %h1
-      %a{:href => home_path}
-        %span.archive The 
-        %span.commercial Exquisite 
-        %span.deming Course
-    %nav
-      %ul.archive.clearfix
-        %li= link_to 'Join', '#'
-        %li= link_to 'Login', '#'
-        %li= link_to 'About', '#'
+.row
+  .sixteen.columns
+    %header.clearfix
+      %h1
+        %a{:href => home_path}
+          %span.archive The 
+          %span.commercial Exquisite 
+          %span.deming Course
+      %nav
+        %ul.archive.clearfix
+          %li= link_to 'Join', '#'
+          %li= link_to 'Login', '#'
+          %li= link_to 'About', '#'
 
-.one-third.column
-  .ingredient
-    = image_tag(@starch.photo)
-    .overlay
-      .name
-        #starch
-          = @starch.name
+.row
+  .one-third.column
+    .ingredient
+      = image_tag(@starch.photo)
+      .overlay
+        .name
+          #starch
+            = @starch.name
 
-.one-third.column
-  .ingredient
-    = image_tag(@veggie.photo)
-    .overlay
-      .name
-        #vegetable
-          = @veggie.name
+  .one-third.column
+    .ingredient
+      = image_tag(@veggie.photo)
+      .overlay
+        .name
+          #vegetable
+            = @veggie.name
 
-.one-third.column
-  .ingredient
-    = image_tag(@flair.photo)
-    .overlay
-      .name
-        #flair
-          = @flair.name
+  .one-third.column
+    .ingredient
+      = image_tag(@flair.photo)
+      .overlay
+        .name
+          #flair
+            = @flair.name
 
-.controls
-  %a#spin-again{:href => "/combinations/new"}
-    %i.icon-random.icon-3x
+.row
+  .one.column.offset-by-fifteen
+    %a#spin-again{:href => "/combinations/new"}
+      %i.icon-random.icon-2x
