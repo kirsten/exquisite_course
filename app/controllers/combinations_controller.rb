@@ -6,16 +6,4 @@ class CombinationsController < ApplicationController
     @combination = Combination.new
     # @combination.foods = [@starch, @veggie, @flair]
   end
-
-  def create
-  end
-
-  def update
-  end
-
-  def edit
-  end
-
-  def destroy
-  end
 end

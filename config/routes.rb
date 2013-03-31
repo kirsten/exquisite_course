@@ -2,6 +2,6 @@ ExquisiteCourse::Application.routes.draw do
   
   root :to => 'home#index'
   
-  resources :combinations
+  resources :combinations, :only => [:new]
   resources :groups
 end
