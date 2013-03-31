@@ -6,29 +6,35 @@
         .name
           #starch
             = @starch.name
-      %i.icon-chevron-up.icon-4x.up-arrow
-      %i.icon-chevron-down.icon-4x.down-arrow
+      %a.up-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-up.icon-4x
+      %a.down-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-down.icon-4x
 
 
   .one-third.column
     .ingredient
       = image_tag(@veggie.photo)
-      %i.icon-chevron-up.icon-4x.up-arrow
-      %i.icon-chevron-down.icon-4x.down-arrow
       .overlay
         .name
           #vegetable
             = @veggie.name
+      %a.up-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-up.icon-4x
+      %a.down-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-down.icon-4x
 
   .one-third.column
     .ingredient
       = image_tag(@flair.photo)
-      %i.icon-chevron-up.icon-4x.up-arrow
-      %i.icon-chevron-down.icon-4x.down-arrow
       .overlay
         .name
           #flair
             = @flair.name
+      %a.up-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-up.icon-4x
+      %a.down-arrow{:href => "/combinations/new"}
+        %i.icon-chevron-down.icon-4x
 
 .row
   .one.column.offset-by-fifteen
