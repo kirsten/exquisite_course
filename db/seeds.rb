@@ -20,19 +20,20 @@ wild_rice = Food.create(name: "wild rice", photo: "wild-rice.jpg")
 yellow_rice = Food.create(name: "yellow rice", photo: "yellow-rice.jpg")
 
 beets = Food.create(name: "beets", photo: "beets.jpg")
-black_beans = Food.create(name: "black beans", photo: "blackbeans.jpg")
+black_beans = Food.create(name: "black beans", photo: "black-beans.jpg")
 broccoli_rabe = Food.create(name: "broccoli rabe", photo: "broccolirabe.jpg")
-brussels_sprouts = Food.create(name: "brussels sprouts", photo: "brussellssprouts.jpg")
+brussels_sprouts = Food.create(name: "brussels sprouts", photo: "brussels-sprouts.jpg")
+carrots = Food.create(name: "carrots", photo: "carrots.jpg")
 chard = Food.create(name: "chard", photo: "chard.jpg")
-chick_peas = Food.create(name: "chickpeans", photo: "chickpea.jpg")
+chick_peas = Food.create(name: "chickpeans", photo: "chickpeas.jpg")
 corn = Food.create(name: "corn", photo: "corn.jpg")
 kale = Food.create(name: "kale", photo: "kale.jpg")
 leeks = Food.create(name: "leeks", photo: "leeks.jpg")
 mushrooms = Food.create(name: "mushrooms", photo: "mushrooms.jpg")
 parsnips = Food.create(name: "parsnips", photo: "parsnips.jpg")
 peas = Food.create(name: "peas", photo: "peas.jpg")
-squash = Food.create(name: "squash", photo: "squash.jpg")
-squash_blossom = Food.create(name: "squash blossom", photo: "squashblossom.jpg")
+# squash = Food.create(name: "squash", photo: "squash.jpg")
+squash_blossom = Food.create(name: "squash blossom", photo: "squash-blossom.jpg")
 zucchini = Food.create(name: "zucchini", photo: "zucchini.jpg")
 
 almonds = Food.create(name: "almonds", photo: "almonds.jpg")
@@ -52,5 +53,5 @@ rosemary = Food.create(name: "rosemary", photo: "rosemary.jpg")
 shallots = Food.create(name: "shallots", photo: "shallots.jpg")
 
 grains.foods = [couscous, pasta_1, pasta_2, phyllo, quinoa, ravioli, risotto, sweet_potato, tortilla, wild_rice, yellow_rice]
-vegetables.foods = [beets, black_beans, broccoli_rabe, brussels_sprouts, chard, chick_peas, corn, kale, leeks, mushrooms, parsnips, peas, squash, squash_blossom, zucchini]
+vegetables.foods = [beets, black_beans, broccoli_rabe, brussels_sprouts, carrots, chard, chick_peas, corn, kale, leeks, mushrooms, parsnips, peas, squash_blossom, zucchini]
 flair.foods = [almonds, avocado, cherries, citrus, cranberries, feta, figs, ginger, goat_cheese, honey, mint, pears, rosemary, shallots]
