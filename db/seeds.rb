@@ -1,31 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-starch = Group.create(name: "starches")
-vegetable = Group.create(name: "vegetables")
+grains = Group.create(name: "grains")
+vegetables = Group.create(name: "vegetables")
 flair = Group.create(name: "toppings")
 
 couscous = Food.create(name: "couscous", photo: "couscous.jpg")
-farro = Food.create(name: "farro", photo: "farro.jpg")
-gnocchi = Food.create(name: "gnocchi", photo: "gnocchi.jpg")
-pasta = Food.create(name: "pasta", photo: "pasta.jpg")
+# farro = Food.create(name: "farro", photo: "farro.jpg")
+# gnocchi = Food.create(name: "gnocchi", photo: "gnocchi.jpg")
+pasta_1 = Food.create(name: "pasta", photo: "pasta-1.jpg")
+pasta_2 = Food.create(name: "pasta", photo: "pasta-2.jpg")
 phyllo = Food.create(name: "phyllo", photo: "phyllo.jpg")
-polenta = Food.create(name: "polenta", photo: "polenta.jpg") 
-pomegranate = Food.create(name: "pomegranate", photo: "pomegranate.jpg")
+# polenta = Food.create(name: "polenta", photo: "polenta.jpg") 
 quinoa = Food.create(name: "quinoa", photo: "quinoa.jpg")
 ravioli = Food.create(name: "ravioli", photo: "ravioli.jpg")
 risotto = Food.create(name: "risotto", photo: "risotto.jpg")
-spaetzel = Food.create(name: "spaetzel", photo: "spaetzel.jpg")
-sticky_rice = Food.create(name: "sticky rice", photo: "stickyrice.jpg")
-sweet_potato = Food.create(name: "sweet potato", photo: "sweetpotato.jpg")
+# spaetzel = Food.create(name: "spaetzel", photo: "spaetzel.jpg")
+# sticky_rice = Food.create(name: "sticky rice", photo: "stickyrice.jpg")
+sweet_potato = Food.create(name: "sweet potato", photo: "sweet-potato.jpg")
 tortilla = Food.create(name: "tortilla", photo: "tortilla.jpg")
-wild_rice = Food.create(name: "wild rice", photo: "wildrice.jpg")
-yellow_rice = Food.create(name: "yellow rice", photo: "yellowrice.jpg")
+wild_rice = Food.create(name: "wild rice", photo: "wild-rice.jpg")
+yellow_rice = Food.create(name: "yellow rice", photo: "yellow-rice.jpg")
 
 beets = Food.create(name: "beets", photo: "beets.jpg")
 black_beans = Food.create(name: "black beans", photo: "blackbeans.jpg")
@@ -55,9 +47,10 @@ goat_cheese = Food.create(name: "goat cheese", photo: "goatcheese.jpg")
 honey = Food.create(name: "honey", photo: "honey.jpg")
 mint = Food.create(name: "mint", photo: "mint.jpg")
 pears = Food.create(name: "pears", photo: "pears.jpg")
+# pomegranate = Food.create(name: "pomegranate", photo: "pomegranate.jpg")
 rosemary = Food.create(name: "rosemary", photo: "rosemary.jpg")
 shallots = Food.create(name: "shallots", photo: "shallots.jpg")
 
-starch.foods = [couscous, farro, gnocchi, pasta, phyllo, polenta, pomegranate, quinoa, ravioli, risotto, spaetzel, sticky_rice, sweet_potato, tortilla, wild_rice, yellow_rice]
-vegetable.foods = [beets, black_beans, broccoli_rabe, brussels_sprouts, chard, chick_peas, corn, kale, leeks, mushrooms, parsnips, peas, squash, squash_blossom, zucchini]
+grains.foods = [couscous, pasta_1, pasta_2, phyllo, quinoa, ravioli, risotto, sweet_potato, tortilla, wild_rice, yellow_rice]
+vegetables.foods = [beets, black_beans, broccoli_rabe, brussels_sprouts, chard, chick_peas, corn, kale, leeks, mushrooms, parsnips, peas, squash, squash_blossom, zucchini]
 flair.foods = [almonds, avocado, cherries, citrus, cranberries, feta, figs, ginger, goat_cheese, honey, mint, pears, rosemary, shallots]
