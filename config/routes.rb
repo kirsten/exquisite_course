@@ -4,4 +4,6 @@ ExquisiteCourse::Application.routes.draw do
   
   resources :combinations, :only => [:new]
   resources :groups, :only => [:index]
+
+  match '/about', to: 'static_pages#about'
 end
