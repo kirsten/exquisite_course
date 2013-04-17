@@ -18,17 +18,17 @@ ActiveRecord::Schema.define(:version => 20130126231648) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "foods", :force => true do |t|
+  create_table "groups", :force => true do |t|
     t.string   "name"
-    t.string   "photo"
-    t.integer  "group_id"
     t.integer  "combination_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
 
-  create_table "groups", :force => true do |t|
+  create_table "ingredients", :force => true do |t|
     t.string   "name"
+    t.string   "photo"
+    t.integer  "group_id"
     t.integer  "combination_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false

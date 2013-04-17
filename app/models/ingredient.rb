@@ -1,4 +1,4 @@
-class Food < ActiveRecord::Base
+class Ingredient < ActiveRecord::Base
   attr_accessible :name, :photo, :group_id, :combination_id
   
   belongs_to :group
