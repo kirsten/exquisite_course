@@ -1,9 +1,13 @@
-$(document).ready(ingredientHandlers);
-
-function ingredientHandlers() {
+jQuery.fn.ingredientHandlers = function () {
   $('.overlay').click(pinIngredient);
   $('.ingredient').hover(showArrows, hideArrows);
-}
+  return this;
+};
+
+$(function () {
+  $('.overlay').click(pinIngredient);
+  $('.ingredient').hover(showArrows, hideArrows);
+});
 
 function pinIngredient() {
   if ($(this).parent().parent().hasClass("home") == false) {
