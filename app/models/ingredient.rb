@@ -1,6 +1,6 @@
 class Ingredient < ActiveRecord::Base
-  attr_accessible :name, :photo, :group_id, :combination_id
+  attr_accessible :name, :photo, :group_id, :suggestion_id
   
   belongs_to :group
-  belongs_to :combination
+  belongs_to :suggestion
 end
