@@ -1,6 +1,6 @@
 grains = Group.create(name: "grains")
 vegetables = Group.create(name: "vegetables")
-flair = Group.create(name: "toppings")
+flair = Group.create(name: "flair")
 
 couscous = Ingredient.create(name: "couscous", photo: "couscous.jpg")
 # farro = Ingredient.create(name: "farro", photo: "farro.jpg")
