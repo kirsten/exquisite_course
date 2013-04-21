@@ -2,6 +2,7 @@ ExquisiteCourse::Application.routes.draw do
   
   root :to => 'home#index'
   
+  resources :suggestions, :only => :show
   match '/suggest', to: 'suggestions#new'
   match '/shuffle', to: 'suggestions#shuffle'
   resources :groups, :only => [:index]
