@@ -6,11 +6,8 @@
         .name
           #starch
             = @starch.name
-      %a.up-arrow
-        %i.icon-chevron-up.icon-4x
-      %a.down-arrow
-        %i.icon-chevron-down.icon-4x
-
+      = link_to raw('<i class="icon-chevron-up icon-4x"></i>'), '#', class: 'up-arrow'
+      = link_to raw('<i class="icon-chevron-down icon-4x"></i>'), '#', class: 'down-arrow'
 
   .one-third.column
     .ingredient
@@ -19,10 +16,8 @@
         .name
           #vegetable
             = @veggie.name
-      %a.up-arrow
-        %i.icon-chevron-up.icon-4x
-      %a.down-arrow
-        %i.icon-chevron-down.icon-4x
+      = link_to raw('<i class="icon-chevron-up icon-4x"></i>'), '#', class: 'up-arrow'
+      = link_to raw('<i class="icon-chevron-down icon-4x"></i>'), '#', class: 'down-arrow'
 
   .one-third.column
     .ingredient
@@ -31,11 +26,9 @@
         .name
           #flair
             = @flair.name
-      %a.up-arrow
-        %i.icon-chevron-up.icon-4x
-      %a.down-arrow
-        %i.icon-chevron-down.icon-4x
+      = link_to raw('<i class="icon-chevron-up icon-4x"></i>'), '#', class: 'up-arrow'
+      = link_to raw('<i class="icon-chevron-down icon-4x"></i>'), '#', class: 'down-arrow'
 
 .row
   .one.column.offset-by-fifteen
-    = link_to raw('<i class="icon-random icon-2x"></i>'), shuffle_path, :remote => :true, :id => "spin-again"
+    = link_to raw('<i class="icon-random icon-2x"></i>'), random_path, :id => "spin-again"
