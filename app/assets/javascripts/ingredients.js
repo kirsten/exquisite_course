@@ -1,11 +1,11 @@
 jQuery.fn.ingredientHandlers = function () {
-  $('.overlay').click(pinIngredient);
+  // $('.overlay').click(pinIngredient);
   $('.ingredient').hover(showArrows, hideArrows);
   return this;
 };
 
 $(function () {
-  $('.overlay').click(pinIngredient);
+  // $('.overlay').click(pinIngredient);
   $('.ingredient').hover(showArrows, hideArrows);
 });
 
