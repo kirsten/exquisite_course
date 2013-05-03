@@ -20,7 +20,17 @@
 
     <p>Sign up to get notified when member accounts are available!</p>
 
-    <p><%= link_to "Notify Me" %></p>
+    <!-- Begin MailChimp Signup Form -->
+
+    <div id="mc_embed_signup">
+    <form action="http://twitter.us7.list-manage.com/subscribe/post?u=3df9d726e0a5d1ee55cf2e8e3&amp;id=38d3743a36" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<!--         <label for="mce-EMAIL">Subscribe for updates</label> -->
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <input type="submit" value="NOTIFY ME!" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
 
     <h2>A peanut-sauce-drizzled, roasted beet spring roll for your thoughts?</h2>
     <p>If you love cooking, or don't love cooking, but definitely love food: <strong>we want to hear from you!</strong> Please share your thoughts at <%= mail_to "exquisitecourse@gmail.com", "exquisitecourse@gmail.com", target: "_blank" %>.</p>
