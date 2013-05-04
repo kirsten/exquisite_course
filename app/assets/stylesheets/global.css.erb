@@ -202,12 +202,20 @@ nav li {
   margin-top: 10px;
 }
 
-#mc_embed_signup input[type="submit"] {
+.button, .button:hover,
+a.button, a.button:hover,
+button, button:hover, 
+input[type="submit"], input[type="submit"]:hover,
+input[type="reset"], input[type="reset"]:hover,
+input[type="button"], input[type="button"]:hover {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   color: white;
   font-size: 13px;
   letter-spacing: 1px;
-  background: #FF6A4D -webkit-linear-gradient(top, #FF6A4D, #FF6A4D);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF6A4D), to(##FF6A4D)); /*Safari 4-5, Chrome 1-9*/ 
+  background: -webkit-linear-gradient(top, #FF6A4D, #FF6A4D); /*Safari 5.1, Chrome 10+ */
+  background: -moz-linear-gradient(top, #FF6A4D, #FF6A4D); /*Firefox 3.6+  */
+  background: -ms-linear-gradient(top, #FF6A4D, #FF6A4D); /*IE 10 */
   font-weight: normal;
   padding: 10px;
   border-radius: 8px;
