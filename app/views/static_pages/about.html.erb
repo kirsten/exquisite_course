@@ -1,18 +1,16 @@
 <div class="row">
-  <div class="two-thirds column">
+  <div class="four columns">
+    <%= image_tag('pink_plate.jpg', class: 'about-pics') %>
+  </div>
+  <div class="twelve columns">
     <h2>What's for dinner?</h2>
     <p>The Exquisite Course is an idea-generator that shuffles ingredients from three basic food categories into thousands of new combinations, helping you solve the eternal problem of what to make for dinner. Tacos with roast sweet potatoes and crumbled feta? Farro with leeks and meyer lemon zest? The possibilities are endless...and that's just the beginning!</p>
     <p><%= button_to "GET INSPIRED!", random_path, method: 'get', class: 'button' %></p>
   </div>
-  <div class="one-third column">
-    <%= image_tag('pink_plate.jpg', class: 'about-pics') %>
-  </div>
+</div>
 
-  <div class="one-third column">
-    <%= image_tag('rice-kale-pears.png', class: 'about-pics') %>
-  </div>
-
-  <div class="two-thirds column">
+<div class="row">
+  <div class="ten columns">
     <h2>Why Exquisite Course?</h2>
     <p>Remember the surrealists? They were a wild and crazy bunch of artists that responded to the changing pace of modern life in the early 1900s by exploring bizarre and other-worldly realms.</p>
 
@@ -21,20 +19,24 @@
     <p>Later, the exquisite corpse idea was turned into a book for kids to make funny, mis-matched animals with lizard heads, chicken bodies and panda feet. Or panda heads, lizard bodies and chicken feet. You get the idea.</p>
   </div>
 
-  <div class="two-thirds column">
-    <h2>Real good meals</h2>
-    <p>Like the surrealists' games, The Exquisite Course divides a dish into three parts and lets you swap around ingredients into endless combinations. Sometimes freakish, sometimes fantastic, always something new to inspire you in the kitchen.</p>
+  <div class="six columns">
+    <%= image_tag('rice-kale-pears.png', class: 'about-pics no-border') %>
   </div>
+</div>
 
-  <div class="one-third column">
+<div class="row">
+  <div class="four columns">
     <%= image_tag('tomato_meal.jpg', class: 'about-pics') %>
   </div>
 
-  <div class="one-third column">
-    <%= image_tag('banana-flax.jpg', class: 'about-pics') %>
+  <div class="twelve columns">
+    <h2>Real good meals</h2>
+    <p>Like the surrealists' games, The Exquisite Course divides a dish into three parts and lets you swap around ingredients into endless combinations. Sometimes freakish, sometimes fantastic, always something new to inspire you in the kitchen.</p>
   </div>
+</div>
 
-  <div class="two-thirds column">
+<div class="row">
+  <div class="twelve columns">
     <h2>Coming soon</h2>
     <p>Soon, The Exquisite Course will offer member accounts where you can save your favorite combinations and eventually share images, recipes, tips and more.</p>
 
@@ -50,9 +52,13 @@
     </form>
     </div>
   </div>
-
     <!--End mc_embed_signup-->
+  <div class="four columns">
+    <%= image_tag('banana-flax.jpg', class: 'about-pics') %>
+  </div>
+</div>
 
+<div class="row">
   <div class="sixteen columns">
     <h2>A peanut-sauce-drizzled, roasted beet taco for your thoughts?</h2>
     <p>If you love cooking, or don't love cooking, but definitely love food: <strong>we want to hear from you!</strong> Please share your thoughts at <%= mail_to "exquisitecourse@gmail.com", "exquisitecourse@gmail.com", target: "_blank" %>.</p>
