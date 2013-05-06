@@ -1,2 +1,5 @@
-#suggestion-container
+#suggestion-container.row
   = render 'ingredients'
+.row
+  .sixteen.columns
+    = link_to raw('<i class="icon-random icon-2x"></i>'), random_path, :id => "spin-again"
