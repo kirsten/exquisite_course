@@ -6,6 +6,10 @@
         .name
           #starch
             = @starch.name
+      %span.attribution.right-text
+        Photo by 
+        = link_to 'Some Person', '#' 
+        = link_to 'CC BY 2.0', '#'
 
   .one-third.column
     .ingredient
@@ -14,6 +18,8 @@
         .name
           #vegetable
             = @veggie.name
+      %span.attribution.right-text
+        Photo by Another Person, CC BY-SA 2.0
 
   .one-third.column
     .ingredient
@@ -22,3 +28,5 @@
         .name
           #flair
             = @flair.name
+      %span.attribution.right-text
+        Photo by Whoever, CC BY-SA 2.0
