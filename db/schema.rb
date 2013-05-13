@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130421001830) do
+ActiveRecord::Schema.define(:version => 20130513025623) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -30,6 +30,19 @@ ActiveRecord::Schema.define(:version => 20130421001830) do
   create_table "ingredients_suggestions", :id => false, :force => true do |t|
     t.integer "ingredient_id"
     t.integer "suggestion_id"
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "file"
+    t.string   "title"
+    t.string   "title_url"
+    t.string   "author"
+    t.string   "author_url"
+    t.string   "license"
+    t.string   "license_url"
+    t.integer  "ingredient_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "suggestions", :force => true do |t|
