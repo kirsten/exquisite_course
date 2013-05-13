@@ -1,32 +1,45 @@
 .row
   .one-third.column
     .ingredient
-      = image_tag(@starch.photo)
+      = image_tag(@starch.photo.file)
       .overlay
         .name
           #starch
             = @starch.name
       %span.attribution.right-text
-        Photo by 
-        = link_to 'Some Person', '#' 
-        = link_to 'CC BY 2.0', '#'
+        Photo: 
+        = link_to @starch.photo.title, @starch.photo.title_url
+        by
+        = link_to @starch.photo.author, @starch.photo.author_url
+        | 
+        = link_to @starch.photo.license, @starch.photo.license_url
 
   .one-third.column
     .ingredient
-      = image_tag(@veggie.photo)
+      = image_tag(@veggie.photo.file)
       .overlay
         .name
           #vegetable
             = @veggie.name
       %span.attribution.right-text
-        Photo by Another Person, CC BY-SA 2.0
+        Photo: 
+        = link_to @veggie.photo.title, @veggie.photo.title_url
+        by
+        = link_to @veggie.photo.author, @veggie.photo.author_url
+        | 
+        = link_to @veggie.photo.license, @veggie.photo.license_url
 
   .one-third.column
     .ingredient
-      = image_tag(@flair.photo)
+      = image_tag(@flair.photo.file)
       .overlay
         .name
           #flair
             = @flair.name
       %span.attribution.right-text
-        Photo by Whoever, CC BY-SA 2.0
+        Photo: 
+        = link_to @flair.photo.title, @flair.photo.title_url
+        by
+        = link_to @flair.photo.author, @flair.photo.author_url
+        | 
+        = link_to @flair.photo.license, @flair.photo.license_url
