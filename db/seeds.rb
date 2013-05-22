@@ -61,7 +61,7 @@ tortilla.photo = Photo.create(file: "tortilla.jpg", title: "Homemade Tortillas",
                               license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
 wild_rice = Ingredient.create(name: "wild rice")
-wild_rice.photo = Photo.create(file: "wild-rice.jpg", title: "Creamy Chicken & Wild Rice Soup", title_url: "http://www.flickr.com/photos/whitneyinchicago/4534318419/",
+wild_rice.photo = Photo.create(file: "wild-rice.jpg", title: "Wild Rice Soup", title_url: "http://www.flickr.com/photos/whitneyinchicago/4534318419/",
                                author: "whitneyinchicago", author_url: "http://www.flickr.com/photos/whitneyinchicago/",
                                license: cc_generic, license_url: cc_generic_url)
 

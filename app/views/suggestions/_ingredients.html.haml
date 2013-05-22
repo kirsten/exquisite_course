@@ -7,12 +7,7 @@
           #starch
             = @starch.name
       %span.attribution.right-text
-        Photo: 
-        = link_to @starch.photo.title, @starch.photo.title_url
-        by
-        = link_to @starch.photo.author, @starch.photo.author_url
-        | 
-        = link_to @starch.photo.license, @starch.photo.license_url
+        = show_attribution(@starch.photo)
 
   .one-third.column
     .ingredient
@@ -22,12 +17,7 @@
           #vegetable
             = @veggie.name
       %span.attribution.right-text
-        Photo: 
-        = link_to @veggie.photo.title, @veggie.photo.title_url
-        by
-        = link_to @veggie.photo.author, @veggie.photo.author_url
-        | 
-        = link_to @veggie.photo.license, @veggie.photo.license_url
+        = show_attribution(@veggie.photo)
 
   .one-third.column
     .ingredient
@@ -37,9 +27,5 @@
           #flair
             = @flair.name
       %span.attribution.right-text
-        Photo: 
-        = link_to @flair.photo.title, @flair.photo.title_url
-        by
-        = link_to @flair.photo.author, @flair.photo.author_url
-        | 
-        = link_to @flair.photo.license, @flair.photo.license_url
+        = show_attribution(@flair.photo)
+
