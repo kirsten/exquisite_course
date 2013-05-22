@@ -15,11 +15,13 @@ couscous.photo = Photo.create(file: "couscous.jpg", title: "couscous", title_url
 
 # farro = Ingredient.create(name: "farro", photo: "farro.jpg")
 # gnocchi = Ingredient.create(name: "gnocchi", photo: "gnocchi.jpg")
-pasta_1 = Ingredient.create(name: "pasta")
-pasta_1.photo = Photo.create(file: "pasta-1.jpg")
+pasta = Ingredient.create(name: "pasta")
+pasta.photo = Photo.create(file: "pasta-1.jpg", title: "Pasta in casa", title_url: "http://www.flickr.com/photos/orsorama/344024244/",
+                           author: "orsorama", author_url: "http://www.flickr.com/photos/orsorama/"
+                           license: cc_generic, license_url: cc_generic_url)
 
-pasta_2 = Ingredient.create(name: "pasta")
-pasta_2.photo = Photo.create(file: "pasta-2.jpg")
+gnocchi = Ingredient.create(name: "gnocchi")
+gnocchi.photo = Photo.create(file: "pasta-2.jpg", author: "Jill Peterson")
 
 phyllo = Ingredient.create(name: "phyllo")
 phyllo.photo = Photo.create(file: "phyllo.jpg", title: "Mushroomy Goodness", title_url: "http://www.flickr.com/photos/22865921@N07/3173246426/",
@@ -33,28 +35,43 @@ quinoa.photo = Photo.create(file: "quinoa.jpg", title: "Tri-Colour Quinoa", titl
                             license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
 ravioli = Ingredient.create(name: "ravioli")
-ravioli.photo = Photo.create(file: "ravioli.jpg")
+ravioli.photo = Photo.create(file: "ravioli.jpg", title: "Ravioli", title_url: "http://www.flickr.com/photos/bluumwezi/3456536986/",
+                             author: "Blue moon in her eyes", author_url: "http://www.flickr.com/photos/bluumwezi/",
+                             license: cc_generic, license_url: cc_generic_url)
 
 risotto = Ingredient.create(name: "risotto")
-risotto.photo = Photo.create(file: "risotto.jpg")
-# spaetzel = Ingredient.create(name: "spaetzel", photo: "spaetzel.jpg")
+risotto.photo = Photo.create(file: "risotto.jpg", title: "Chanterelle risotto", title_url: "http://www.flickr.com/photos/bluumwezi/4824406875/",
+                             author: "Blue moon in her eyes", author_url: "http://www.flickr.com/photos/bluumwezi/",
+                             license: cc_generic, license_url: cc_generic_url)
+spaetzel = Ingredient.create(name: "spaetzel")
+spaetzel.photo = Photo.create(file: "spaetzel.jpg", title: "Rabbit Spaetzle", title_url: "http://www.flickr.com/photos/Edsel_/4781354857/",
+                              author: "Edsel L", author_url: "http://www.flickr.com/photos/edsel_/",
+                              license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 # sticky_rice = Ingredient.create(name: "sticky rice", photo: "stickyrice.jpg")
 sweet_potato = Ingredient.create(name: "sweet potato")
-sweet_potato.photo = Photo.create(file: "sweet-potato.jpg")
+sweet_potato.photo = Photo.create(file: "sweet-potato.jpg", title: "Sweet Potato Fries", title_url: "http://www.flickr.com/photos/stevendepolo/5594197886/",
+                                  author: "stevendepolo", author_url: "http://www.flickr.com/photos/stevendepolo/",
+                                  license: cc_generic, license_url: cc_generic_url)
 
 tortilla = Ingredient.create(name: "tortilla")
-tortilla.photo = Photo.create(file: "tortilla.jpg")
+tortilla.photo = Photo.create(file: "tortilla.jpg", title: "Homemade Tortillas", title_url: "http://www.flickr.com/photos/timpatterson/6965691227/",
+                              author: "Tim Patterson", author_url: "http://www.flickr.com/photos/timpatterson/",
+                              license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
 wild_rice = Ingredient.create(name: "wild rice")
-wild_rice.photo = Photo.create(file: "wild-rice.jpg")
+wild_rice.photo = Photo.create(file: "wild-rice.jpg", title: "Creamy Chicken & Wild Rice Soup", title_url: "http://www.flickr.com/photos/whitneyinchicago/4534318419/",
+                               author: "whitneyinchicago", author_url: "http://www.flickr.com/photos/whitneyinchicago/",
+                               license: cc_generic, license_url: cc_generic_url)
 
 yellow_rice = Ingredient.create(name: "yellow rice")
-yellow_rice.photo = Photo.create(file: "yellow-rice.jpg")
+yellow_rice.photo = Photo.create(file: "yellow-rice.jpg", title: "Arroz Amarillo con Maiz", title_url: "http://www.flickr.com/photos/bochalla/4792595626/",
+                                 author: "bochalla", author_url: "http://www.flickr.com/photos/bochalla/",
+                                 license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
 # Vegetables
 
 beets = Ingredient.create(name: "beets")
-beets.photo = Photo.create(file: "beets.jpg")
+beets.photo = Photo.create(file: "beets.jpg", author: "Jill Peterson")
 
 black_beans = Ingredient.create(name: "black beans")
 black_beans.photo = Photo.create(file: "black-beans.jpg", title: "Black Beans", title_url: "http://www.flickr.com/photos/cookbookman/5684475740/",
@@ -77,7 +94,7 @@ carrots.photo = Photo.create(file: "carrots.jpg", title: "Carrots", title_url: "
                              license: cc_generic, license_url: cc_generic_url)
 
 chard = Ingredient.create(name: "chard")
-chard.photo = Photo.create(file: "chard.jpg")
+chard.photo = Photo.create(file: "chard.jpg", author: "Jill Peterson")
 
 chick_peas = Ingredient.create(name: "chickpeas")
 chick_peas.photo = Photo.create(file: "chickpeas.jpg", title: "Rinsing soaked chickpeas", title_url: "http://www.flickr.com/photos/getselfsufficient/5472935427/",
@@ -95,7 +112,7 @@ kale.photo = Photo.create(file: "kale.jpg", title: "kale", title_url: "http://ww
                           license: cc_generic, license_url: cc_generic_url)
 
 leeks = Ingredient.create(name: "leeks")
-leeks.photo = Photo.create(file: "leeks.jpg")
+leeks.photo = Photo.create(file: "leeks.jpg", author: "Jill Peterson")
 
 mushrooms = Ingredient.create(name: "mushrooms")
 mushrooms.photo = Photo.create(file: "mushrooms.jpg", title: "Boletus", title_url: "http://www.flickr.com/photos/juan-antonio-capo/5215788050/",
@@ -131,50 +148,66 @@ almonds.photo = Photo.create(file: "almonds.jpg", title: "Almonds", title_url: "
                              license: cc_generic, license_url: cc_generic_url)
 
 avocado = Ingredient.create(name: "avocado")
-avocado.photo = Photo.create(file: "avocado.jpg")
-# cherries = Ingredient.create(name: "cherries", photo: "cherries.jpg")
+avocado.photo = Photo.create(file: "avocado.jpg", title: "Day 312: Avocados", title_url: "http://www.flickr.com/photos/emilylaurel/8339341709/",
+                             author: "emily.laurel504", author_url: "http://www.flickr.com/photos/emilylaurel/",
+                             license: cc_generic, license_url: cc_generic_url)
+
 clementines = Ingredient.create(name: "clementines")
-clementines.photo = Photo.create(file: "clementines.jpg")
+clementines.photo = Photo.create(file: "clementines.jpg", author: "Jill Peterson")
 
 meyer_lemons = Ingredient.create(name: "meyer lemons")
-meyer_lemons.photo = Photo.create(file: "meyer-lemons.jpg")
+meyer_lemons.photo = Photo.create(file: "meyer-lemons.jpg", author: "Jill Peterson")
 
 cranberries = Ingredient.create(name: "cranberries")
-cranberries.photo = Photo.create(file: "cranberries.jpg")
+cranberries.photo = Photo.create(file: "cranberries.jpg", title: "Cranberry", title_url: "http://www.flickr.com/photos/halfchinese/305095614/",
+                                 author: "Half Chinese", author_url: "http://www.flickr.com/photos/halfchinese/",
+                                 license: cc_generic, license_url: cc_generic_url)
 
 feta = Ingredient.create(name: "feta")
-feta.photo = Photo.create(file: "feta.jpg")
+feta.photo = Photo.create(file: "feta.jpg", title: "Spanakopita - Feta chunks", title_url: "http://www.flickr.com/photos/grongar/5815670649/",
+                          author: "grongar", author_url: "http://www.flickr.com/photos/grongar/",
+                          license: cc_generic, license_url: cc_generic_url)
 
 figs = Ingredient.create(name: "figs")
 figs.photo = Photo.create(file: "figs.jpg")
 
 ginger = Ingredient.create(name: "ginger")
-ginger.photo = Photo.create(file: "ginger.jpg")
+ginger.photo = Photo.create(file: "ginger.jpg", title: "Crystallized Ginger", title_url: "http://www.flickr.com/photos/joyosity/3029082541/",
+                            author: "joyosity", author_url: "http://www.flickr.com/photos/joyosity/",
+                            license: cc_generic, license_url: cc_generic_url)
 
 goat_cheese = Ingredient.create(name: "goat cheese")
-goat_cheese.photo = Photo.create(file: "goat-cheese.jpg")
+goat_cheese.photo = Photo.create(file: "goat-cheese.jpg", title: "Cracked goat cheese", title_url: "http://www.flickr.com/photos/quinnanya/2906701701/",
+                                 author: "quinn.anya", author_url: "http://www.flickr.com/photos/quinnanya/",
+                                 license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
 honey = Ingredient.create(name: "honey")
-honey.photo = Photo.create(file: "honey.jpg")
+honey.photo = Photo.create(file: "honey.jpg", author: "Jill Peterson")
 
 mint = Ingredient.create(name: "mint")
-mint.photo = Photo.create(file: "mint.jpg")
+mint.photo = Photo.create(file: "mint.jpg", title: "Mint", title_url: "http://www.flickr.com/photos/anthonycramp/2953727783/",
+                          author: "anthonycramp", author_url: "http://www.flickr.com/photos/anthonycramp/",
+                          license: cc_generic, license_url: cc_generic_url)
 
 olives = Ingredient.create(name: "olives")
-olives.photo = Photo.create(file: "olives.jpg")
+olives.photo = Photo.create(file: "olives.jpg", author: "Jill Peterson")
 
 pears = Ingredient.create(name: "pears")
-pears.photo = Photo.create(file: "pears.jpg")
-# pomegranate = Ingredient.create(name: "pomegranate", photo: "pomegranate.jpg")
+pears.photo = Photo.create(file: "pears.jpg", title: "Pear Still Life", title_url: "http://www.flickr.com/photos/sackton/8098580346/",
+                           author: "timsackton", author_url: "http://www.flickr.com/photos/sackton/",
+                           license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
+
 rosemary = Ingredient.create(name: "rosemary")
-rosemary.photo = Photo.create(file: "rosemary.jpg")
+rosemary.photo = Photo.create(file: "rosemary.jpg", author: "Jill Peterson")
 
 salami = Ingredient.create(name: "salami")
-salami.photo = Photo.create(file: "salami.jpg")
+salami.photo = Photo.create(file: "salami.jpg", author: "Jill Peterson")
 
 shallots = Ingredient.create(name: "shallots")
-shallots.photo = Photo.create(file: "shallots.jpg")
+shallots.photo = Photo.create(file: "shallots.jpg", title: "Shallots", title_url: "http://www.flickr.com/photos/sackton/6453301783/",
+                              author: "timsackton", author_url: "http://www.flickr.com/photos/sackton/",
+                              license: "CC BY-SA 2.0", license_url: "http://creativecommons.org/licenses/by-sa/2.0/")
 
-grains.ingredients = [couscous, pasta_1, pasta_2, phyllo, quinoa, ravioli, risotto, sweet_potato, tortilla, wild_rice, yellow_rice]
+grains.ingredients = [couscous, pasta_1, pasta_2, phyllo, quinoa, ravioli, risotto, spaetzel, sweet_potato, tortilla, wild_rice, yellow_rice]
 vegetables.ingredients = [beets, black_beans, broccoli_rabe, brussels_sprouts, carrots, chard, chick_peas, corn, kale, leeks, mushrooms, parsnips, peas, squash_blossom, zucchini]
 flair.ingredients = [almonds, avocado, clementines, meyer_lemons, cranberries, feta, figs, ginger, goat_cheese, honey, mint, olives, pears, rosemary, salami, shallots]
